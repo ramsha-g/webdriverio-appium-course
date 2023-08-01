@@ -4,15 +4,15 @@ const { config } = require('./wdio.shared.conf');
 // ============
 // BrowserStack Credentials
 // ============
-config.user = 'ramshaghanchi_pYcASF';
-config.key = 'U4BoxDG3QRMhaJT84oCp';
+config.user = process.env.BROWSERSTACK_USER;
+config.key = process.env.BROWSERSTACK_KEY;
 
 //
 // ============
 // Specs
 // ============
 config.specs = [
-  path.join(process.cwd(), './test/specs/android/add-note.spec.js')
+  path.join(process.cwd(), './test/specs/android/add-note-screen*.js')
 ];
 
 //
@@ -25,7 +25,7 @@ config.capabilities = [
     "appium:platformVersion": "10.0",
     "appium:deviceName": "Google Pixel 3",
     "appium:automationName": "UIAutomator2",
-    "appium:app": "bs://0db588679d50e5140fe90e876c749285e166195c",
+    "appium:app": "bs://cd209a98beb9c4bb48cfadf74d84c99092ec639c",
     "appium:autoGrantPermissions": true
   }
 ]
