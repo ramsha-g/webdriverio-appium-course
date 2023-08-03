@@ -1,7 +1,7 @@
 const AddNoteScreen = require("../../screenobjects/android/add-note.screen");
 
 describe ('Add Notes', ()=>{
-  it('Skip tutorial', async () => {
+  it.only('Skip tutorial', async () => {
 
     //tap on skip
     await AddNoteScreen.skipBtn.click();

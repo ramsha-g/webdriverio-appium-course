@@ -13,7 +13,7 @@ config.port = 4723;
 // Specs
 // ============
 config.specs = [
-  path.join(process.cwd(), './test/specs/android/add-note*.js')
+  './test/specs/android/add-note-screen*.js'
 ];
 
 //
