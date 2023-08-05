@@ -36,6 +36,11 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
+
+    capabilities: [{
+        browserName: 'chrome',
+    }],
+
     maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
